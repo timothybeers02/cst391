@@ -1,24 +1,20 @@
 # Milestone 1
 
 <!-- 1. Cover Sheet -->
-#### Timothy Beers
-#### College of Science, Engineering, & Technology, Grand Canyon University
-#### CST-391: JavaScript Web Application Development
-#### Professor Bobby Estey
+Timothy Beers \
+College of Science, Engineering, & Technology, Grand Canyon University \
+CST-391: JavaScript Web Application Development \
+Professor Bobby Estey
 
 
 <!-- 2. Introduction -->
 ## Introduction
 
-In today's digital era, accessing spiritual resources should be easy. Christian Library is a web platform dedicated to providing users with digital copies of the Bible in various translations, alongside a diverse collection of Christian books and songs. The purpose of this application is to serve as a comprehensive hub for individuals seeking to explore, understand, and deepen their faith through accessible Christian media. The platform enhances users' spiritual journeys by making essential Christian teachings readily available. Through this accessible and user-friendly platform, individuals can conveniently engage with scripture and inspirational content anytime, anywhere.
+In today's digital era, accessing biblical and religious resources should be easy. Christian Library is a web platform dedicated to providing users with digital copies of the Bible in various translations, alongside a diverse collection of Christian books and music. The purpose of this application is to serve as a comprehensive hub for people seeking to explore, understand, and deepen their faith through accessible Christian media. The platform enhances users' spiritual journeys by making essential Christian teachings readily available. Through this accessible and user-friendly platform, individuals can conveniently engage with scripture and inspirational content anytime, anywhere.
 
 
 <!-- 3. Functionality Requirements -->
 ## Functionality Requirements
-
-Below is a list of functionality requirements for the **Christian Library** web application, presented in User Story format.
-
----
 
 ### Browsing Media
 
@@ -77,11 +73,6 @@ Below is a list of functionality requirements for the **Christian Library** web 
 19. **As an administrator**, I want to delete media that is outdated or no longer appropriate so that the library maintains relevant content.
 
 20. **As an administrator**, I want to manage user accounts (e.g., deactivate or ban users) so that I can enforce platform policies.
-
-21. **As an administrator**, I want to view usage statistics so that I can understand user engagement and improve the platform.
-
-22. **As an administrator**, I want to approve or moderate user-generated content (if applicable) so that the platform remains appropriate for all users.
-
 
 
 <!-- 4. Initial Database Design -->

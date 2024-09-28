@@ -76,11 +76,42 @@ In today's digital era, accessing biblical and religious resources should be eas
 
 
 <!-- 4. Initial Database Design -->
+## Database Design
 
-<!-- 5. Initial UI Sitemap -->
+![ER Diagram](./christianLibraryER.png)
+
+<!-- 5. Initial UI Sitemap (Using Mermaid) -->
+## UI Sitemap
+![Sitemap](./christianLibrarySitemap.png)
 
 <!-- 6. Initial UI Wireframes -->
+## UI Wireframe Pages
+|Page Name|Wireframe|
+|--|--|
+|Registration|![register](./wireframeViews/registrationPage.png)|
+|Login|![login](./wireframeViews/loginPage.png)|
+|Home|![home](./wireframeViews/homePage.png)|
+|Browse|![browse](./wireframeViews/browseMedia.png)|
+|Search|![search](./wireframeViews/searchPage.png)|
+|Manage Media|![adminMedia](./wireframeViews/adminPanelMedia.png)|
+|Manage Users|![adminUsers](./wireframeViews/adminPanelUsers.png)|
 
 <!-- 7. Initial UML Classes -->
 
+## UML Classes
+![UML Diagram](./christianLibraryUML.png)
+
 <!-- 8. Risks -->
+
+## Risks
+
+- **Technical Challenges**: Integrating the Angular frontend with the Express/Node.js backend and the MySQL database may have unforeseen issues that require additional time to resolve.
+- **Learning Curve**: Unfamiliarity with technologies like Angular, Express, or MySQL could slow down development due to the time needed to learn and troubleshoot these tools.
+- **Time Constraints**: Limited time for project completion might lead to rushed development, resulting in incomplete features or reduced code quality.
+- **Scope Creep**: Adding features beyond the initial plan can overcomplicate the project, making it difficult to deliver a functional application within the allotted time.
+- **Security Vulnerabilities**: Risks such as SQL injection, cross-site scripting, and improper authentication need to be addressed to protect user data and ensure application integrity.
+- **Data Management**: Improper handling of user data and media files could lead to data loss, corruption, or breaches, impacting user trust and application reliability.
+- **User Experience Issues**: Failing to create an intuitive and accessible user interface may result in poor user engagement and satisfaction.
+- **Testing Limitations**: Insufficient testing could leave bugs undetected, affecting the application's functionality and user experience.
+- **Dependency Risks**: Relying on third-party libraries or frameworks may introduce compatibility issues or vulnerabilities if those dependencies are outdated or unsupported.
+- **Deployment Challenges**: Setting up the application in a live environment may present obstacles related to server configuration, hosting services, or scalability concerns.

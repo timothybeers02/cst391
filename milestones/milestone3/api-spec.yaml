@@ -1,0 +1,276 @@
+openapi: 3.0.0
+info:
+  title: Christian Library API
+  version: 1.0.0
+  description: API for the Christian Library web application.
+
+servers:
+  - url: http://localhost:3000/api
+
+paths:
+  /media:
+    get:
+      summary: Get all media items
+      tags:
+        - Media
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Media'
+    post:
+      summary: Create a new media item
+      tags:
+        - Media
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Media'
+      responses:
+        '201':
+          description: Media item created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Media'
+  /media/{mediaId}:
+    get:
+      summary: Get media item by ID
+      tags:
+        - Media
+      parameters:
+        - name: mediaId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Media'
+    put:
+      summary: Update a media item
+      tags:
+        - Media
+      parameters:
+        - name: mediaId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Media'
+      responses:
+        '200':
+          description: Media item updated
+    delete:
+      summary: Delete a media item
+      tags:
+        - Media
+      parameters:
+        - name: mediaId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Media item deleted
+  /media/type/{type}:
+    get:
+      summary: Get media items by type
+      tags:
+        - Media
+      parameters:
+        - name: type
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Media'
+  /media/search/title/{search}:
+    get:
+      summary: Search media by title
+      tags:
+        - Media
+      parameters:
+        - name: search
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Media'
+  /media/search/author/{search}:
+    get:
+      summary: Search media by author
+      tags:
+        - Media
+      parameters:
+        - name: search
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Media'
+  /register:
+    post:
+      summary: Register a new user
+      tags:
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: User registered
+  /login:
+    post:
+      summary: User login
+      tags:
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  token:
+                    type: string
+  /users/{userId}:
+    get:
+      summary: Get user profile
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+    put:
+      summary: Update user profile
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          description: User updated
+    delete:
+      summary: Delete user account
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: User deleted
+
+components:
+  schemas:
+    Media:
+      type: object
+      properties:
+        mediaId:
+          type: integer
+        mediaType:
+          type: string
+        title:
+          type: string
+        author:
+          type: string
+        category:
+          type: string
+        description:
+          type: string
+        filePath:
+          type: string
+    User:
+      type: object
+      properties:
+        userId:
+          type: integer
+        username:
+          type: string
+        email:
+          type: string
+        passwordHash:
+          type: string
+        role:
+          type: string

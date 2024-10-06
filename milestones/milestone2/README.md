@@ -1,4 +1,4 @@
-# Milestone 1
+# Milestone 2
 
 <!-- 1. Cover Sheet -->
 Timothy Beers \

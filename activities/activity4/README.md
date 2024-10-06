@@ -16,19 +16,19 @@ In this Activity we will be removing the mock data and implementing a live conne
 
 This screenshot shows the landing page of our app. It remains simple with a nav bar showing links to the various pages we've added.
 
-![Home Page](./applicationScreenshots/artistList.png)
+![Artist List](./applicationScreenshots/artistList.png)
 
 This screenshot shows the list of artists coming back from the API.
 
-![Home Page](./applicationScreenshots/albumList.png)
+![Album List](./applicationScreenshots/albumList.png)
 
 This screenshot should show the list of albums coming back from the API. I couldn't quite figure out why my list display wasn't working, so I've displayed a single album here instead.
 
-![Home Page](./applicationScreenshots/albumDisplayWithTracks.png)
+![Album Display](./applicationScreenshots/albumDisplayWithTracks.png)
 
 This is the detail page for an album, with all information including tracks listed. 
 
-![Home Page](./applicationScreenshots/addAlbum.png)
+![Add Album](./applicationScreenshots/addAlbum.png)
 
 This shows the add album page for our application, where we can post new albums through our API, which will then show when looking through our lists.
 

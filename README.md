@@ -23,6 +23,7 @@ Professor Bobby Estey
 |[Activity 1](./activities/activity1/README.md)|Activity 1 was about setting up a MusicAPI using MVC and routers|
 |[Activity 2](./activities/activity2/README.md)|Activity 2 included setup for Angular development tools|
 |[Activity 3](./activities/activity3/README.md)|Activity 3 covered setting up and managing data in a frontend Angular application|
+|[Activity 4](./activities/activity4/README.md)|Activity 4 removed mock data from our Angular application and replaced it with a live connection to our API|
 
 ## Milestones
 

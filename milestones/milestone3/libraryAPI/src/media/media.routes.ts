@@ -5,7 +5,7 @@ const router = Router();
 
 // Get all media items
 router.get(
-      "/media", 
+      "/media",
       MediaController.readMedia
 );
 

@@ -1,0 +1,37 @@
+<div class="update-media-container">
+      <h2>Update Media Items</h2>
+
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+      <form>
+            <div class="media-list">
+                  <div class="media-item" *ngFor="let media of mediaItems; let i = index;">
+                        <div class="media-details">
+                              <label>
+                                    Title:
+                                    <input [(ngModel)]="media.title" name="title{{ i }}" />
+                              </label>
+                              <label>
+                                    Author:
+                                    <input [(ngModel)]="media.author" name="author{{ i }}" />
+                              </label>
+                              <label>
+                                    Type:
+                                    <input [(ngModel)]="media.mediaType" name="mediaType{{ i }}" />
+                              </label>
+                              <label>
+                                    Category:
+                                    <input [(ngModel)]="media.category" name="category{{ i }}" />
+                              </label>
+                              <label>
+                                    Description:
+                                    <textarea [(ngModel)]="media.description" name="description{{ i }}"></textarea>
+                              </label>
+                        </div>
+                        <button type="button" class="update-button" (click)="updateMediaItem(media.mediaId)">
+                              Update
+                        </button>
+                  </div>
+            </div>
+      </form>
+</div>

@@ -1,0 +1,16 @@
+<div class="delete-media-container">
+      <h2>Delete Media Items</h2>
+
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+      <div class="media-list">
+            <div class="media-item" *ngFor="let media of mediaItems">
+                  <div class="media-details">
+                        <h3>{{ media.title }}</h3>
+                        <p>Author: {{ media.author }}</p>
+                        <p>Type: {{ media.mediaType }}</p>
+                  </div>
+                  <button class="delete-button" (click)="deleteMediaItem(media.mediaId)">Delete</button>
+            </div>
+      </div>
+</div>

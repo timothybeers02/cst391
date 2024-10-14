@@ -34,7 +34,7 @@ export const createMedia = async (media: Media) => {
 
 export const updateMedia = async (media: Media) => {
   return execute<OkPacket>(mediaQueries.updateMedia, [
-    media.mediaType, media.title, media.author, media.category, media.description, media.filePath
+    media.mediaType, media.title, media.author, media.category, media.description, media.filePath, media.mediaId
   ]);
 };
 

@@ -1,0 +1,56 @@
+/* Styles for the update-media component */
+
+.update-media-container {
+  padding: 20px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.media-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.media-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.media-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.media-details label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.media-details input,
+.media-details textarea {
+  padding: 8px;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.update-button {
+  margin-top: 15px;
+  background-color: #28a745; /* Bootstrap's success color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: #218838;
+}

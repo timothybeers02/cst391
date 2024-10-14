@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+
+  <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+    <div class="d-flex justify-content-center" id="navbarNav">
+      <div style="margin: 0 auto;">
+        <div class="navbar-nav">
+          <a class="submit-button text-center" routerLink="/">Home</a>
+          <a class="submit-button text-center" routerLink="/browse-media">Browse Media</a>
+          <a class="submit-button text-center" routerLink="/update-media">Update Media</a> <!-- TODO: hide for non-admins -->
+          <a class="submit-button text-center" routerLink="/delete-media">Delete Media</a> <!-- TODO: hide for non-admins -->
+          <a class="submit-button text-center" routerLink="/create-media">Create Media</a> <!-- TODO: hide for non-admins -->
+          <a class="submit-button text-center" routerLink="/search">Search</a>
+          <!-- <a class="submit-button text-center" routerLink="/login">Login</a>
+          <a class="submit-button text-center" routerLink="/register">Register</a> -->
+          <!-- <button class="submit-button text-center" (click)="displayVersion()">About</button> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>

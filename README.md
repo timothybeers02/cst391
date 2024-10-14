@@ -33,6 +33,7 @@ Professor Bobby Estey
 |[Milestone 1](./milestones/milestone1/README.md)|Milestone 1 was a project proposal for the web application to be implemented in future milestones |
 |[Milestone 2](./milestones/milestone2/README.md)|Milestone 2 refined the project proposal, adding an outline for the REST API we will build|
 |[Milestone 3](./milestones/milestone3/README.md)|Milestone 3 included creating the REST API to interface with the database outlined in the previous milestones|
+|[Milestone 4](./milestones/milestone4/README.md)|Milestone 4 covered the creation of an Angular application to perform CRUD operations using the API created in the previous milestones|
 
 
 # Conclusion

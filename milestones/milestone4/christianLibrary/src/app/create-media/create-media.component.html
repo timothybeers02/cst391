@@ -1,0 +1,46 @@
+<div class="create-media-container">
+      <h2>Create New Media Item</h2>
+
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+      <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+
+      <form #createMediaForm="ngForm" (ngSubmit)="createMedia()">
+            <div class="form-group">
+                  <label>
+                        Title:
+                        <input type="text" [(ngModel)]="media.title" name="title" required />
+                  </label>
+            </div>
+            <div class="form-group">
+                  <label>
+                        Author:
+                        <input type="text" [(ngModel)]="media.author" name="author" required />
+                  </label>
+            </div>
+            <div class="form-group">
+                  <label>
+                        Type:
+                        <input type="text" [(ngModel)]="media.mediaType" name="mediaType" required />
+                  </label>
+            </div>
+            <div class="form-group">
+                  <label>
+                        Category:
+                        <input type="text" [(ngModel)]="media.category" name="category" />
+                  </label>
+            </div>
+            <div class="form-group">
+                  <label>
+                        Description:
+                        <textarea [(ngModel)]="media.description" name="description"></textarea>
+                  </label>
+            </div>
+            <div class="form-group">
+                  <label>
+                        File Path:
+                        <input type="text" [(ngModel)]="media.filePath" name="filePath" />
+                  </label>
+            </div>
+            <button type="submit" class="create-button">Create Media</button>
+      </form>
+</div>

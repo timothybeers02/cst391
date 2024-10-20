@@ -25,6 +25,7 @@ Professor Bobby Estey
 |[Activity 3](./activities/activity3/README.md)|Activity 3 covered setting up and managing data in a frontend Angular application|
 |[Activity 4](./activities/activity4/README.md)|Activity 4 removed mock data from our Angular application and replaced it with a live connection to our API|
 |[Activity 5](./activities/activity5/README.md)|In Activity 5 we setup a simple React application and used hooks to update state|
+|[Activity 5](./activities/activity6/README.md)|Activity 6 included connecting our React app to the REST API and implementing routing and a nav bar.|
 
 ## Milestones
 

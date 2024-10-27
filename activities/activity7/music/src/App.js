@@ -5,8 +5,6 @@ import NavBar from "./NavBar";
 import EditAlbum from "./EditAlbum";
 import OneAlbum from "./OneAlbum";
 import './App.css';
-// import SearchForm from "./SearchForm";
-// import albums from './albums.json';
 import dataSource from "./dataSource";
 
 const App = () => {

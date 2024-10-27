@@ -1,0 +1,71 @@
+.media-card {
+  width: 300px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.card-buttons {
+  margin-top: 15px;
+}
+
+.card-buttons .btn {
+  margin-right: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #555;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #a00;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #575757;
+}
+
+.btn-secondary:hover {
+  background-color: #777;
+}
+
+.btn-danger:hover {
+  background-color: #c00;
+}

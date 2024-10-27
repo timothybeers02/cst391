@@ -1,0 +1,35 @@
+/* Navbar container */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+/* Branding */
+.navbar-brand {
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 14px 20px;
+}
+
+/* Navbar links container */
+.navbar-links {
+  float: right;
+}
+
+/* Navbar links */
+.navbar-links .nav-item {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 20px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.navbar-links .nav-item:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
